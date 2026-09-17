@@ -115,6 +115,10 @@ class Resolver(object):
             return None
         if ',' in domain or '|' in domain:
             return None
+        if any(c.isspace() for c in domain):
+            # 畸形规则，例如 hosts 格式与 AdGuard 语法混用产生的
+            # "||0.0.0.0 example.com^"，中间残留了空格，不能当作域名处理
+            return None
         if domain.startswith('*.'):
             domain = domain[2:]
         if domain.startswith('.') or domain.startswith('/'):
@@ -450,6 +454,8 @@ class Resolver(object):
                 # ||example.org^
                 if match('^\|\|.*\^$', line):
                     domain = line[2:-1]
+                    if any(c.isspace() for c in domain):
+                        raise Exception('"%s": malformed rule, domain contains whitespace'%(line))
                     if domain.find('*') >= 0:
                         if domain.startswith('*.') and domain[2:].find('*')<0:
                             domain = domain[2:]
@@ -462,6 +468,8 @@ class Resolver(object):
                 # @@||example.org^
                 if match('^@@\|\|.*\^$', line):
                     domain = line[4:-1]
+                    if any(c.isspace() for c in domain):
+                        raise Exception('"%s": malformed rule, domain contains whitespace'%(line))
                     if domain.find('*') >= 0:
                         if domain.startswith('*.') and domain[2:].find('*')<0:
                             domain = domain[2:]
@@ -522,9 +530,30 @@ class Resolver(object):
                 #if line.find(' #') > 0:
                 #    line = line[:line.find(' #')].strip()
 
+                # 混入的 hosts 格式行，如 "0.0.0.0 example.com" / "127.0.0.1 example.com"
+                # 有些 filter 类型的上游源会夹杂这种写法，必须单独识别，
+                # 否则会被下面"纯域名"的兜底判断把 IP 和域名一起当成域名解析，
+                # 产生 "||0.0.0.0 example.com^" 这类畸形规则
+                tokens = line.split()
+                if len(tokens) >= 2 and self.__is_ip_address(tokens[0]):
+                    ignore_names = {
+                        'localhost', 'localhost.localdomain', 'local',
+                        '0.0.0.0', '127.0.0.1', '::1', '::',
+                        'ip6-localhost', 'ip6-loopback',
+                    }
+                    domain_candidates = [t for t in tokens[1:] if t not in ignore_names]
+                    if domain_candidates:
+                        try:
+                            block = self.__analysis(domain_candidates[0])
+                        except Exception:
+                            block = None
+                    break
+
                 # ||example.org^: block access to the example.org domain and all its subdomains, like www.example.org.
                 if match('^\|\|.*\^$', line):
                     domain = line[2:-1]
+                    if any(c.isspace() for c in domain):
+                        raise Exception('"%s": malformed rule, domain contains whitespace'%(line))
                     if domain.find('/') >= 0:
                         filter = line
                         break
@@ -541,6 +570,8 @@ class Resolver(object):
                 # @@||example.org^: unblock access to the example.org domain and all its subdomains.
                 if match('^@@\|\|.*\^$', line):
                     domain = line[4:-1]
+                    if any(c.isspace() for c in domain):
+                        raise Exception('"%s": malformed rule, domain contains whitespace'%(line))
                     if domain.find('*') >= 0 or domain.find('/') >= 0:
                         filter = line
                         break
@@ -549,6 +580,8 @@ class Resolver(object):
                 # @@||example.org^|: unblock access to the example.org domain and all its subdomains.
                 if match('^@@\|\|.*\^\|$', line):
                     domain = line[4:-2]
+                    if any(c.isspace() for c in domain):
+                        raise Exception('"%s": malformed rule, domain contains whitespace'%(line))
                     if domain.find('*') >= 0 or domain.find('/') >= 0:
                         filter = line
                         break
