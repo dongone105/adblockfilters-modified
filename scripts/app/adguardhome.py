@@ -24,7 +24,10 @@ class AdGuardHome(APPBase):
             
             if os.path.exists(fileName):
                 os.remove(fileName)
-            
+
+            # 去除放行规则，放行规则已单独输出到白名单文件（adblockdnswhitelist.txt）
+            unblockList = []
+
             # 生成规则文件
             with open(fileName, 'a') as f:
                 f.write("!\n")
@@ -52,3 +55,4 @@ class AdGuardHome(APPBase):
                 logger.info("adblock AdGuardHome: block=%d, unblock=%d"%(len(blockList), len(unblockList)))
         except Exception as e:
             logger.error("%s"%(e))
+            
