@@ -1,6 +1,7 @@
 from .base import APPBase
 from .adguard import AdGuard
 from .adguardhome import AdGuardHome
+from .adguardhome_whitelist import AdGuardHomeWhitelist 
 from .clash_classical import ClashClassical
 from .dnsmasq import DNSMasq
 from .dnsmasq_addnhosts import DNSMasqAddnHosts
