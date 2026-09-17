@@ -99,57 +99,75 @@ class Updater(object):
             hash_value = sha256obj.hexdigest()
             return hash_value
 
-import os
-from typing import List, Set, Dict
-
-from loguru import logger
-
-from app.base import APPBase
-
-class AdGuard(APPBase):
-    def __init__(self, blockList:List[str], unblockList:List[str], filterDict:Dict[str,str], filterList:List[str], filterList_var:List[str], ChinaSet:Set[str], fileName:str, sourceRule:str):
-        super(AdGuard, self).__init__(blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, fileName, sourceRule)
-
-    def generate(self, isLite=False):
+    async def __Download(self, rule:Rule, path:str) -> Tuple[Rule, dict]:
+        fileName = path + "/" + rule.filename
+        fileName_download = fileName + '.download'
+        meta_update = None
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                          "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Accept": "text/plain,text/html,application/octet-stream,*/*",
+        }
+        max_retries = 3
         try:
-            if isLite:
-                logger.info("generate adblock AdGuard Lite...")
-                fileName = self.fileNameLite
-                filterList = self.filterListLite
-            else:
-                logger.info("generate adblock AdGuard...")
-                fileName = self.fileName
-                filterList = self.filterList
-            
+            if os.path.exists(fileName_download):
+                os.remove(fileName_download)
+
+            last_error = None
+            response = None
+            async with httpx.AsyncClient(follow_redirects=True, timeout=30.0, headers=headers) as client:
+                for attempt in range(1, max_retries + 1):
+                    try:
+                        response = await client.get(rule.url)
+                        response.raise_for_status()
+                        last_error = None
+                        break
+                    except Exception as e:
+                        last_error = e
+                        if attempt < max_retries:
+                            logger.warning("%s download attempt %d/%d failed: %s, retrying..." % (rule.name, attempt, max_retries, e))
+                            await asyncio.sleep(2 * attempt)
+                if last_error:
+                    raise last_error
+
+                content = response.content
+                contentType = response.headers.get("Content-Type", "").lower()
+                is_text_type = contentType.startswith("text/") or "text/plain" in contentType
+                if not is_text_type and not self.__is_probably_text(content):
+                    raise Exception("Content-Type[%s] error"%(contentType))
+                with open(fileName_download,'wb') as f:
+                    f.write(content)
+
             if os.path.exists(fileName):
-                os.remove(fileName)
-
-            # 去除放行规则（@@ 开头），放行规则已单独输出到白名单文件
-            filterList = [fiter for fiter in filterList if not fiter.startswith('@@')]
-
-            # 生成规则文件
-            with open(fileName, 'a') as f:
-                f.write("!\n")
-                if isLite:
-                    f.write("! Title: AdBlock Filter Lite\n")
-                    f.write("! Description: 适用于 AdGuard 的去广告合并规则，每 12 小时更新一次。规则源：%s。Lite 版仅针对国内域名拦截。\n"%(self.sourceRule))
+                sha256Old = self.__CalcFileSha256(fileName)
+                sha256New = self.__CalcFileSha256(fileName_download)
+                if sha256New != sha256Old:
+                    old_lines = self.__count_file_lines(fileName)
+                    new_lines = self.__count_file_lines(fileName_download)
+                    if self.__is_anomalous_lines(new_lines, old_lines):
+                        logger.warning("%s lines anomaly: old=%d, new=%d" % (rule.name, old_lines, new_lines))
+                    rule.update = True
                 else:
-                    f.write("! Title: AdBlock Filter\n")
-                    f.write("! Description: 适用于 AdGuard 的去广告合并规则，每 12 小时更新一次。规则源：%s。\n"%(self.sourceRule))
-                f.write("! Homepage: %s\n"%(self.homepage))
-                f.write("! Source: %s/%s\n"%(self.source, os.path.basename(fileName)))
-                f.write("! Version: %s\n"%(self.version))
-                f.write("! Last modified: %s\n"%(self.time))
-                f.write("! Blocked Filters: %s\n"%(len(filterList)))
-                f.write("!\n")
-                for fiter in self.filterList_var:
-                    f.write("%s\n"%(fiter))
-                for fiter in filterList:
-                    f.write("%s\n"%(fiter))
-            
-            if isLite:
-                logger.info("adblock AdGuard Lite: block=%d"%(len(filterList)))
+                    os.remove(fileName_download)
+                    return rule, None
             else:
-                logger.info("adblock AdGuard: block=%d"%(len(filterList)))
+                rule.update = True
+
+            os.replace(fileName_download, fileName)
+            meta_update = {
+                "filename": rule.filename,
+                "sha256": self.__CalcFileSha256(fileName),
+                "lines": self.__count_file_lines(fileName),
+                "etag": response.headers.get("ETag", ""),
+                "last_modified": response.headers.get("Last-Modified", ""),
+                "updated_at": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
+                "source_url": rule.url,
+            }
         except Exception as e:
-            logger.error("%s"%(e))
+            logger.error(f'%s download failed: %s' % (rule.name, e))
+        finally:
+            if rule.update:
+                rule.latest = time.strftime("%Y/%m/%d", time.localtime())
+            logger.info("%s: latest=%s, update=%s"%(rule.name,rule.latest,rule.update))
+            return rule, meta_update
+            
