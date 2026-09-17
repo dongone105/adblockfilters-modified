@@ -135,7 +135,6 @@
 | hyper_adrules_malware_adguard | filter | [原始链接](https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_malware_adguard.txt) | - | - | - |
 | 喵二黑名单 | filter | [原始链接](https://raw.githubusercontent.com/miaoermua/AdguardFilter/main/rule.txt) | - | - | - |
 | DNS-Kuner_blacklist.txt | dns | [原始链接](https://raw.githubusercontent.com/Kuner-mw/DNS-Kuner/main/FilterRules/blacklist.txt) | - | - | - |
-
 | 茯苓允许列表 | dns | [原始链接](https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingAllowList.txt) | - | - | - |
 | 那个谁520广告白名单 | dns | [原始链接](https://raw.githubusercontent.com/qq5460168/666/master/allow.txt) | - | - | - |
 | DNS-Kuner_allowlist | dns | [原始链接](https://raw.githubusercontent.com/Kuner-mw/DNS-Kuner/main/FilterRules/allowlist.txt) | - | - | - |
