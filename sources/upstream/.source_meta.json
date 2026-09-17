@@ -71,6 +71,33 @@
     "source_url": "https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT",
     "updated_at": "2026-09-17 12:40:50"
   },
+  "hyper_adrules_ads_adguard.txt": {
+    "etag": "\"0x8DF1446A46C0A89\"",
+    "filename": "hyper_adrules_ads_adguard.txt",
+    "last_modified": "Wed, 16 Sep 2026 23:02:54 GMT",
+    "lines": 155291,
+    "sha256": "363c277f98ab9783ee25ae5523136ca82a61257421cc86b784fdd44aa33cb8c8",
+    "source_url": "https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_ads_adguard.txt",
+    "updated_at": "2026-09-17 15:28:19"
+  },
+  "hyper_adrules_allow_adguard.txt": {
+    "etag": "\"0x8DF1446A44022D2\"",
+    "filename": "hyper_adrules_allow_adguard.txt",
+    "last_modified": "Wed, 16 Sep 2026 23:02:54 GMT",
+    "lines": 686,
+    "sha256": "5bd652480fd43524a979d356d512a85e9db9763a5dd3161ff9621f28715a6870",
+    "source_url": "https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_allow_adguard.txt",
+    "updated_at": "2026-09-17 15:28:19"
+  },
+  "hyper_adrules_malware_adguard.txt": {
+    "etag": "\"0x8DF1446A4432CA6\"",
+    "filename": "hyper_adrules_malware_adguard.txt",
+    "last_modified": "Wed, 16 Sep 2026 23:02:54 GMT",
+    "lines": 6294,
+    "sha256": "3b9a6e348badba474fff0e243f87e644a42060f9f54228d871092a248bd7f92f",
+    "source_url": "https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_malware_adguard.txt",
+    "updated_at": "2026-09-17 15:28:19"
+  },
   "qy-Ads-Rule.txt": {
     "etag": "W/\"85f33257b5efe8c05bd4cecc1dca3d0f8a1209bbea2bc25c0153a6da7e4ce94f\"",
     "filename": "qy-Ads-Rule.txt",
