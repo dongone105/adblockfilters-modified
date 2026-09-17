@@ -118,7 +118,7 @@
 | 规则21' | [原始链接](https://raw.githubusercontent.com/Aethersailor/adblockfilters-modified/main/rules/adblockdnsmasqserverslite.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/adblockdnsmasqserverslite.txt) | 0.95 | 39226 | DNSMasq servers |
 
 ## 上游规则源
-1. 感谢各位广告过滤规则维护大佬们的辛苦付出。
+感谢各位广告过滤规则维护大佬们的辛苦付出。
 
 | 规则 | 类型 | 原始链接 | 加速链接 | 规则数量 | 更新日期 |
 | :- | :- | :- | :- | :- | :- | 
@@ -127,16 +127,16 @@
 | DD-AD | filter | [原始链接](https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/easylist.txt) | - | - | - |
 | qy-Ads-Rule | filter | [原始链接](https://raw.githubusercontent.com/rssvcn/qy-Ads-Rule/main/black.txt) | - | - | - |
 | SMAdHosts | host | [原始链接](https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/master/SMAdHosts) | - | - | - |
-| 那个谁520规则 | dns | [原始链接](https://raw.githubusercontent.com/qq5460168/666/refs/heads/master/rules.txt) | - | - | - |
+| 那个谁520规则 | filter | [原始链接](https://raw.githubusercontent.com/qq5460168/666/refs/heads/master/rules.txt) | - | - | - |
 | TTDNS | dns | [原始链接](https://raw.githubusercontent.com/TTDNS/Cat/refs/heads/main/DNS.TXT) | - | - | - |
-| 茯苓广告规则 | dns | [原始链接](https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingBlockList.txt) | - | - | - |
+| 茯苓广告规则 | filter | [原始链接](https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingBlockList.txt) | - | - | - |
 | HG | filter | [原始链接](https://raw.githubusercontent.com/2771936993/HG/main/hg1.txt) | - | - | - |
-| hyper_adrules_ads_adguard | filter | [原始链接](https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_ads_adguard.txt) | - | - | - |
-| hyper_adrules_malware_adguard | filter | [原始链接](https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_malware_adguard.txt) | - | - | - |
+| hyper_adrules_ads_adguard | dns | [原始链接](https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_ads_adguard.txt) | - | - | - |
+| hyper_adrules_malware_adguard | dns | [原始链接](https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_malware_adguard.txt) | - | - | - |
 | 喵二黑名单 | filter | [原始链接](https://raw.githubusercontent.com/miaoermua/AdguardFilter/main/rule.txt) | - | - | - |
 | DNS-Kuner_blacklist.txt | dns | [原始链接](https://raw.githubusercontent.com/Kuner-mw/DNS-Kuner/main/FilterRules/blacklist.txt) | - | - | - |
-| 茯苓允许列表 | dns | [原始链接](https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingAllowList.txt) | - | - | - |
-| 那个谁520广告白名单 | dns | [原始链接](https://raw.githubusercontent.com/qq5460168/666/master/allow.txt) | - | - | - |
+| 茯苓允许列表 | filter | [原始链接](https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingAllowList.txt) | - | - | - |
+| 那个谁520广告白名单 | filter | [原始链接](https://raw.githubusercontent.com/qq5460168/666/master/allow.txt) | - | - | - |
 | DNS-Kuner_allowlist | dns | [原始链接](https://raw.githubusercontent.com/Kuner-mw/DNS-Kuner/main/FilterRules/allowlist.txt) | - | - | - |
 | 喵二白名单 | filter | [原始链接](https://raw.githubusercontent.com/miaoermua/AdguardFilter/main/whitelist.txt) | - | - | - |
 | hyper_adrules_allow_adguard | filter | [原始链接](https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_allow_adguard.txt) | - | - | - |
