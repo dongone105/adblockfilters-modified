@@ -22,7 +22,10 @@ class AdGuard(APPBase):
             
             if os.path.exists(fileName):
                 os.remove(fileName)
-            
+
+            # 去除放行规则（@@ 开头），放行规则已单独输出到白名单文件
+            filterList = [fiter for fiter in filterList if not fiter.startswith('@@')]
+
             # 生成规则文件
             with open(fileName, 'a') as f:
                 f.write("!\n")
