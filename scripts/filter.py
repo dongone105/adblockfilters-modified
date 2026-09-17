@@ -358,6 +358,7 @@ class Filter(object):
             generaterList:List[APPBase] = [
                 AdGuard     (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockfilters.txt",   sourceRule),
                 AdGuardHome (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockdns.txt",       sourceRule),
+                AdGuardHomeWhitelist(blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockdnswhitelist.txt", sourceRule),
                 DNSMasq     (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockdnsmasq.txt",   sourceRule),
                 DNSMasqAddnHosts(blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockdnsmasqaddnhosts.txt", sourceRule),
                 DNSMasqServers(blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockdnsmasqservers.txt", sourceRule),
