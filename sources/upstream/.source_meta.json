@@ -1,21 +1,21 @@
 {
   "217heidai-adblockfilters.txt": {
-    "etag": "W/\"b374a9ffc838f4329962a6900a7fa3f35a7736395f76636592084b086a87afa7\"",
+    "etag": "W/\"dc276040806e9f538e6c068fffd26192d5ef0f8ab921fe1d2b6c3590dc3336aa\"",
     "filename": "217heidai-adblockfilters.txt",
     "last_modified": "",
-    "lines": 207113,
-    "sha256": "f5d3b09c849173e2d86bb117a1942603a83d5cce2eeca07bb87812e80299568f",
+    "lines": 213882,
+    "sha256": "afba7a1650e222b11eda226c2f1e9344359afeeb9ff3f17255256d3ddfff2a72",
     "source_url": "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt",
-    "updated_at": "2026-09-24 09:13:07"
+    "updated_at": "2026-09-25 09:12:48"
   },
   "DD-AD.txt": {
-    "etag": "W/\"86a775e5e03a0dad1904bda08a16281482e8f8c8fa301fe98dd522adb47eefe6\"",
+    "etag": "W/\"72e408737438f9e810270c80c908ca4934fc1acf98a8e479a3d5657cada4c2c1\"",
     "filename": "DD-AD.txt",
     "last_modified": "",
-    "lines": 70206,
-    "sha256": "460fd58aefcedff463efe2353ef4b07f531fda4e8a2a41fb3c8a0c2e6342d571",
+    "lines": 70022,
+    "sha256": "d88a5fe9e4e7c20b19d23a61393fd6103e43bf1750cf7d922473b04a1472472c",
     "source_url": "https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/easylist.txt",
-    "updated_at": "2026-09-24 09:13:07"
+    "updated_at": "2026-09-25 09:12:48"
   },
   "DNS-Kuner_allowlist.txt": {
     "etag": "W/\"a10d14ac373231b1d1072648013a6e3dd2f10ddc4e1cac4ea3b855ada3c82f9a\"",
@@ -36,13 +36,13 @@
     "updated_at": "2026-09-17 12:40:50"
   },
   "HG.txt": {
-    "etag": "W/\"f33d27035203d84e98060868e7b71695355251bd28bb2b2af60292e8680cc352\"",
+    "etag": "W/\"927ea130b67b3a01136ead8cf03aa8260415c8f5689ef5ee4328bd7c18f9274e\"",
     "filename": "HG.txt",
     "last_modified": "",
     "lines": 13030,
-    "sha256": "c3f6f709da521e69ec095f59f43eb53c441c6c46abb46b3c3f570543fc15f2fb",
+    "sha256": "0a5e985c7828aa0d65ce7b6a27dc255b207c756056faf88e3990793ce7a942d1",
     "source_url": "https://raw.githubusercontent.com/2771936993/HG/main/hg1.txt",
-    "updated_at": "2026-09-24 09:13:07"
+    "updated_at": "2026-09-25 09:12:47"
   },
   "Halflife.txt": {
     "etag": "W/\"9a043-ePSqzZjiHghQz5P9hXNzV4AH0jc\"",
@@ -144,21 +144,21 @@
     "updated_at": "2026-09-17 12:40:50"
   },
   "\u90a3\u4e2a\u8c01520\u5e7f\u544a\u767d\u540d\u5355.txt": {
-    "etag": "W/\"a3d200e97c4866fc21f691ccf8c2e7930b73eadcaa88b61062fd27003860a0f8\"",
+    "etag": "W/\"21e6d51ea7a35c78b71f8ecb50b842f411b25f4815f56aa35a77815529b6de1b\"",
     "filename": "\u90a3\u4e2a\u8c01520\u5e7f\u544a\u767d\u540d\u5355.txt",
     "last_modified": "",
     "lines": 3704,
-    "sha256": "f106a98de7668e4026fd70dd263b24f71021c39e4b5093305dd3ba23a87e8fc1",
+    "sha256": "0e9eda13c1f6693cdbbdc1cced0f43c0e57e9da2fbf5ef9d1291b0b06015d328",
     "source_url": "https://raw.githubusercontent.com/qq5460168/666/master/allow.txt",
-    "updated_at": "2026-09-24 09:13:07"
+    "updated_at": "2026-09-25 09:12:47"
   },
   "\u90a3\u4e2a\u8c01520\u89c4\u5219.txt": {
-    "etag": "W/\"c035d3ae76568f8e0114c1cafd1b77544bbac04bd35c5dc359b6cd5100bde3e4\"",
+    "etag": "W/\"357cdf6ba00c66d3b546be15267421bd1f4dbb47798bc2d0fa759bcdbce5b216\"",
     "filename": "\u90a3\u4e2a\u8c01520\u89c4\u5219.txt",
     "last_modified": "",
     "lines": 33524,
-    "sha256": "c83dde3dae2196a32b3213d1e2b9d72a3694b96453a30f8b4c7bd73f72cd989c",
+    "sha256": "4a863dc992d063f37780864f29dddbcacce3bde16b9824e493017866187d6c7d",
     "source_url": "https://raw.githubusercontent.com/qq5460168/666/refs/heads/master/rules.txt",
-    "updated_at": "2026-09-24 09:13:07"
+    "updated_at": "2026-09-25 09:12:48"
   }
 }
