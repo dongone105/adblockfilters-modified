@@ -3,8 +3,8 @@
 ! Description: 适用于 AdGuardHome 的独立放行规则（白名单），每 12 小时更新一次。规则源：217heidai-adblockfilters、Halflife、DD-AD、qy-Ads-Rule、SMAdHosts、那个谁520规则、TTDNS、茯苓广告规则、HG、hyper_adrules_ads_adguard、hyper_adrules_malware_adguard、喵二黑名单、DNS-Kuner_blacklist.txt、茯苓允许列表、那个谁520广告白名单、DNS-Kuner_allowlist、喵二白名单、hyper_adrules_allow_adguard。
 ! Homepage: https://github.com/dongone105/adblockfilters-modified
 ! Source: https://raw.githubusercontent.com/dongone105/adblockfilters-modified/main/rules/adblockdnswhitelist.txt
-! Version: 20260927092525
-! Last modified: 2026/09/27 09:25:25
+! Version: 20260928092622
+! Last modified: 2026/09/28 09:26:22
 ! Whitelisted domains: 2908
 !
 @@||res.mall.10010.cn^
@@ -1410,7 +1410,6 @@
 @@||laowang.vip^
 @@||ld246.com^
 @@||ldmnq.com^
-@@||leechers-paradise.org^
 @@||trk.ecomm.lenovo.com^
 @@||level-plus.net^
 @@||unsubscribe.lhinsights.com^
@@ -1705,6 +1704,7 @@
 @@||myquark.cn^
 @@||zkres.myzaker.com^
 @@||a1.mzstatic.com^
+@@||a3.mzstatic.com^
 @@||a4.mzstatic.com^
 @@||a5.mzstatic.com^
 @@||a6.mzstatic.com^
