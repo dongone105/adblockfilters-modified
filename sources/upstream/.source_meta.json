@@ -1,21 +1,21 @@
 {
   "217heidai-adblockfilters.txt": {
-    "etag": "W/\"907a6e8707c9e525e697a1374f1236a5f90f4385a8a2442ec94625ca689819b1\"",
+    "etag": "W/\"5cfba3755886b82ceff463347246766ce3948e347124fadcada69e577a992536\"",
     "filename": "217heidai-adblockfilters.txt",
     "last_modified": "",
-    "lines": 216009,
-    "sha256": "5bc8f5fc835309e4bb75af51401bfad2e84f68b94e491150c3a71514e3209ffc",
+    "lines": 215367,
+    "sha256": "d45d3a7427fe91038ae920df0bb0446da96d6d1b8b5b5c9310f339c7a9d7c77c",
     "source_url": "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdns.txt",
-    "updated_at": "2026-10-01 09:15:53"
+    "updated_at": "2026-10-02 09:14:56"
   },
   "DD-AD.txt": {
-    "etag": "W/\"49b10d4148d4ad3d16ecf8ca1c74d61f0b26f4f637febcf49d5ade2fa6ced784\"",
+    "etag": "W/\"1721a8815d51ae278f0ecb07999734cbbe7173f36c040eba5d65e10794d6efe0\"",
     "filename": "DD-AD.txt",
     "last_modified": "",
-    "lines": 70409,
-    "sha256": "d480adf50146c619ea9b559b2ab35f23b7d20d651165f78ee5efb42ba9ef1a3f",
+    "lines": 75492,
+    "sha256": "63c186c8b80a60f54cd151829eb2b94095e6fb643f7bd8ba03a07c5d30d0e6f9",
     "source_url": "https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/easylist.txt",
-    "updated_at": "2026-10-01 09:15:52"
+    "updated_at": "2026-10-02 09:14:56"
   },
   "DNS-Kuner_allowlist.txt": {
     "etag": "W/\"a10d14ac373231b1d1072648013a6e3dd2f10ddc4e1cac4ea3b855ada3c82f9a\"",
@@ -36,13 +36,13 @@
     "updated_at": "2026-09-17 12:40:50"
   },
   "HG.txt": {
-    "etag": "W/\"0b704d6f1ffe7dc126df05636dce4ef32de366b7d66be975be22caa3a043cc65\"",
+    "etag": "W/\"ea2ecbee14dae55f5beafdc3e39ce7862b612f70a8be04d1aae46f1339376a85\"",
     "filename": "HG.txt",
     "last_modified": "",
     "lines": 13039,
-    "sha256": "317eaef077b80ce1ae5027a7b630be8e7d543146efe528cc2e61979af8f829ba",
+    "sha256": "25c3f7b6f3b046578a16860edc8c00b965938a89e48e81bef042ea8896a09d7d",
     "source_url": "https://raw.githubusercontent.com/2771936993/HG/main/hg1.txt",
-    "updated_at": "2026-10-01 09:15:52"
+    "updated_at": "2026-10-02 09:14:56"
   },
   "Halflife.txt": {
     "etag": "W/\"9a4bf-8MVu/9riur6lZsmpAKn35QeRMGs\"",
@@ -72,13 +72,13 @@
     "updated_at": "2026-09-17 12:40:50"
   },
   "hyper_adrules_ads_adguard.txt": {
-    "etag": "\"0x8DF1DC05540197D\"",
+    "etag": "\"0x8DF20180A875004\"",
     "filename": "hyper_adrules_ads_adguard.txt",
-    "last_modified": "Tue, 29 Sep 2026 00:26:41 GMT",
-    "lines": 156734,
-    "sha256": "0131d215183fc7b167a8a513b301a634e9249f34b03e491d36e9cbd06ae4228c",
+    "last_modified": "Thu, 01 Oct 2026 23:59:33 GMT",
+    "lines": 157410,
+    "sha256": "d3d5b38cfeca6a9994f297479fbaadae9d1cf356ea75f2c3b3b40fc20422cdfd",
     "source_url": "https://github.com/Lynricsy/HyperADRules/releases/latest/download/hyper_adrules_ads_adguard.txt",
-    "updated_at": "2026-09-29 09:14:50"
+    "updated_at": "2026-10-02 09:14:56"
   },
   "hyper_adrules_allow_adguard.txt": {
     "etag": "\"0x8DF1446A44022D2\"",
@@ -144,21 +144,21 @@
     "updated_at": "2026-09-17 12:40:50"
   },
   "\u90a3\u4e2a\u8c01520\u5e7f\u544a\u767d\u540d\u5355.txt": {
-    "etag": "W/\"25a396e69bde58b5ebc13d181d57873c79f814a96283407dc579eafc7450c8a8\"",
+    "etag": "W/\"b6380e0db487fa7670f8ba381a379407dd4c7fa146f154fe38dd149ce3a45f6b\"",
     "filename": "\u90a3\u4e2a\u8c01520\u5e7f\u544a\u767d\u540d\u5355.txt",
     "last_modified": "",
     "lines": 3706,
-    "sha256": "78598f51b5f96d33b9f7e5e1ab4dc106f89f0f6302f3a366001ed6f7152d044c",
+    "sha256": "ce75db78ffa38f5af4222e70613845e6146c79007ee64464841dd03bf732eebf",
     "source_url": "https://raw.githubusercontent.com/qq5460168/666/master/allow.txt",
-    "updated_at": "2026-10-01 09:15:52"
+    "updated_at": "2026-10-02 09:14:56"
   },
   "\u90a3\u4e2a\u8c01520\u89c4\u5219.txt": {
-    "etag": "W/\"6efc6c4baeeb333a8ee6a2dbd701004a30b0382673a9cf7711e066015095f6b6\"",
+    "etag": "W/\"d825b2c1529b1d1a2562c2b12a82c544cb97a6db30b7e15c1cf64999519e86d9\"",
     "filename": "\u90a3\u4e2a\u8c01520\u89c4\u5219.txt",
     "last_modified": "",
-    "lines": 33528,
-    "sha256": "0b64fb892e366367a34b0c0178af13cc3359954188668cdc76dcbf84b761a915",
+    "lines": 33530,
+    "sha256": "d65d555ac8faf8ee7363ff7f5cc9e16a903d6b4f41abec87621fd18420fd595d",
     "source_url": "https://raw.githubusercontent.com/qq5460168/666/refs/heads/master/rules.txt",
-    "updated_at": "2026-10-01 09:15:52"
+    "updated_at": "2026-10-02 09:14:56"
   }
 }
