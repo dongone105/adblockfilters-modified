@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuardHome 的独立放行规则（白名单），每 12 小时更新一次。规则源：217heidai-adblockfilters、Halflife、DD-AD、qy-Ads-Rule、SMAdHosts、那个谁520规则、TTDNS、茯苓广告规则、HG、hyper_adrules_ads_adguard、hyper_adrules_malware_adguard、喵二黑名单、DNS-Kuner_blacklist.txt、茯苓允许列表、那个谁520广告白名单、DNS-Kuner_allowlist、喵二白名单、hyper_adrules_allow_adguard。
 ! Homepage: https://github.com/dongone105/adblockfilters-modified
 ! Source: https://raw.githubusercontent.com/dongone105/adblockfilters-modified/main/rules/adblockdnswhitelist.txt
-! Version: 20261011095610
-! Last modified: 2026/10/11 09:56:10
-! Whitelisted domains: 2692
+! Version: 20261012093006
+! Last modified: 2026/10/12 09:30:06
+! Whitelisted domains: 2908
 !
 @@||res.mall.10010.cn^
 @@||u.10010.cn^
@@ -17,12 +17,14 @@
 @@||m.jf.10010.com^
 @@||m1.img.10010.com^
 @@||m2.img.10010.com^
+@@||nishub1.10010.com^
 @@||txwk.10010.com^
 @@||www.10010.com^
 @@||client.app.coc.10086.cn^
 @@||dx.10086.cn^
 @@||jiguang.coc.10086.cn^
 @@||res.app.coc.10086.cn^
+@@||adm.10jqka.com.cn^
 @@||v.110route.cn^
 @@||oss-asq-static.11222.cn^
 @@||static.122.gov.cn^
@@ -30,6 +32,7 @@
 @@||bdad.123pan.cn^
 @@||www.123pan.com^
 @@||www.126.com^
+@@||acstatic-dun.126.net^
 @@||cms-bucket.ws.126.net^
 @@||cstaticdun.126.net^
 @@||cstaticdun-v6.126.net^
@@ -37,6 +40,7 @@
 @@||m701.music.126.net^
 @@||m8.music.126.net^
 @@||m801.music.126.net^
+@@||nimg.ws.126.net^
 @@||res.126.net^
 @@||static.ws.126.net^
 @@||swap.stu.126.net^
@@ -47,6 +51,7 @@
 @@||luna-dict-community.nosdn.127.net^
 @@||mimg.127.net^
 @@||mooc-image.nosdn.127.net^
+@@||necaptcha.nosdn.127.net^
 @@||onegoods.nosdn.127.net^
 @@||urswebzj.nosdn.127.net^
 @@||wanproxy.127.net^
@@ -54,6 +59,7 @@
 @@||yanxuan-item.nosdn.127.net^
 @@||yanxuan.nosdn.127.net^
 @@||ydlunacommon-cdn.nosdn.127.net^
+@@||ad.mcloud.139.com^
 @@||3g.163.com^
 @@||api.iplay.163.com^
 @@||api.look.163.com^
@@ -94,6 +100,7 @@
 @@||music.163.com^
 @@||my.163.com^
 @@||n.163.com^
+@@||news.163.com^
 @@||party.163.com^
 @@||play.163.com^
 @@||qi.163.com^
@@ -103,6 +110,7 @@
 @@||reg.163.com^
 @@||s.163.com^
 @@||service.mkey.163.com^
+@@||sf.163.com^
 @@||sports.163.com^
 @@||study.163.com^
 @@||tom.163.com^
@@ -127,6 +135,8 @@
 @@||dj.1688.com^
 @@||pass.1688.com^
 @@||m.17173.com^
+@@||newgame.17173.com^
+@@||news.17173.com^
 @@||top.17173.com^
 @@||www.17173.com^
 @@||apmfront.17u.cn^
@@ -153,6 +163,7 @@
 @@||equifaxps.122.2o7.net^
 @@||kiplinger.112.2o7.net^
 @@||puma.112.2o7.net^
+@@||vitacost.122.2o7.net^
 @@||jstatic.3.cn^
 @@||jvod.300hu.com^
 @@||app.home.360.cn^
@@ -174,13 +185,17 @@
 @@||sd.360.cn^
 @@||sdk.live.360.cn^
 @@||se.360.cn^
+@@||smart.360.cn^
+@@||soft.360.cn^
 @@||speed.live.360.cn^
+@@||sug.so.360.cn^
 @@||weishi.360.cn^
 @@||360buyimg.com^
 @@||360kuai.com^
 @@||dl.360safe.com^
 @@||down.360safe.com^
 @@||msedown.360safe.com^
+@@||sfdl.360safe.com^
 @@||update.360safe.com^
 @@||wsdl.360safe.com^
 @@||www.360simg.com^
@@ -216,6 +231,7 @@
 @@||www.7k7kjs.cn^
 @@||7moor.com^
 @@||7x24s.com^
+@@||admin-oss-xlvip.a.88cdn.com^
 @@||img-vip-ssl.a.88cdn.com^
 @@||xfile2.a.88cdn.com^
 @@||pull2.91cloud.net^
@@ -234,33 +250,43 @@
 @@||ugame.9game.cn^
 @@||www.9game.cn^
 @@||px.a8.net^
+@@||acg02.cc^
 @@||ad-gone.com^
 @@||p1-lm.adbkwai.com^
 @@||p2-lm.adbkwai.com^
+@@||adblock.adguard.com^
 @@||dns.adguard.com^
 @@||dns-family.adguard.com^
 @@||download.adguard.com^
 @@||reports.adguard.com^
 @@||injections.adguard.org^
 @@||local.adguard.org^
+@@||adidasapp.api.adidas.com.cn^
 @@||app.adjust.com^
 @@||go.adjust.com^
+@@||adnmb3.com^
 @@||mediation.adnxs.com^
+@@||adobe-campaign.com^
+@@||activate.adobe.com^
 @@||ereg.adobe.com^
 @@||get3.adobe.com^
 @@||hlrcv.stage.adobe.com^
 @@||lmlicenses.wip4.adobe.com^
 @@||na1r.services.adobe.com^
 @@||feed.adrelayer.com^
+@@||ads.finance^
 @@||p1-lm.adukwai.com^
 @@||p2-lm.adukwai.com^
 @@||p4-ad.adukwai.com^
+@@||afdian.com^
 @@||afi-b.com^
+@@||account.agiso.com^
 @@||www.agiso.com^
 @@||api.agora.io^
 @@||hclips.ahcdn.com^
 @@||hdzog.ahcdn.com^
 @@||txxx.ahcdn.com^
+@@||vjav0.ahcdn.com^
 @@||aihuishou.com^
 @@||www.airport.us^
 @@||api.airpush.com^
@@ -276,6 +302,7 @@
 @@||orange-dc.alibaba.com^
 @@||dinamicx.alibabausercontent.com^
 @@||zconfig.alibabausercontent.com^
+@@||ae01.alicdn.com^
 @@||cbu01.alicdn.com^
 @@||dorangesource.alicdn.com^
 @@||download.alicdn.com^
@@ -287,6 +314,7 @@
 @@||hudong.alicdn.com^
 @@||img.alicdn.com^
 @@||liangcang-material.alicdn.com^
+@@||o.alicdn.com^
 @@||tbm-auth.alicdn.com^
 @@||yixiu-abtest.alicdn.com^
 @@||www.alidns.com^
@@ -298,6 +326,7 @@
 @@||click.aliyun.com^
 @@||mpush-api.aliyun.com^
 @@||promotion.aliyun.com^
+@@||adash-emas.cn-hangzhou.aliyuncs.com^
 @@||alime-customer-upload-cn-hangzhou.oss-cn-hangzhou.aliyuncs.com^
 @@||ap-southeast-1-ga.device.saf.aliyuncs.com^
 @@||ap-southeast-1.device.saf.aliyuncs.com^
@@ -380,6 +409,8 @@
 @@||itunes.apple.com^
 @@||lcdn-locator.apple.com^
 @@||music.apple.com^
+@@||ocsp.apple.com^
+@@||ocsp2.apple.com^
 @@||phobos.apple.com^
 @@||push.apple.com^
 @@||register.apple.com^
@@ -436,13 +467,18 @@
 @@||mbdp02.bdstatic.com^
 @@||mipcache.bdstatic.com^
 @@||mss0.bdstatic.com^
+@@||nd-static.bdstatic.com^
+@@||now.bdstatic.com^
 @@||pic.rmb.bdstatic.com^
 @@||pss.bdstatic.com^
+@@||sofire.bdstatic.com^
 @@||vd3.bdstatic.com^
 @@||p26-sign.bdxiguaimg.com^
 @@||p3.bdxiguaimg.com^
 @@||p3-sign.bdxiguaimg.com^
 @@||lf3-cdn-tos.bdxiguastatic.com^
+@@||sf3-cdn-tos.bdxiguastatic.com^
+@@||sf6-cdn-tos.bdxiguastatic.com^
 @@||sdk-api.beizi.biz^
 @@||cd.bendibao.com^
 @@||mapi.bestpay.com.cn^
@@ -494,6 +530,7 @@
 @@||rd.bizrate.com^
 @@||click.em.blizzard.com^
 @@||www.blogger.com^
+@@||adv.bloop.info^
 @@||s.bluecore.com^
 @@||bluehost.com^
 @@||blueskyxn.com^
@@ -506,6 +543,8 @@
 @@||mac.bmcx.com^
 @@||map.bmcx.com^
 @@||saomiao.bmcx.com^
+@@||shenfenzheng.bmcx.com^
+@@||shouji.bmcx.com^
 @@||wannianrili.bmcx.com^
 @@||www.bmcx.com^
 @@||ftp.bmp.ovh^
@@ -588,8 +627,10 @@
 @@||click.myctm.canadiantire.ca^
 @@||canyoublockit.com^
 @@||tms.capitalone.com^
+@@||om.cbsi.com^
 @@||cbsi.map.fastly.net^
 @@||wwwimage-tve.cbsstatic.com^
+@@||adv.ccb.com^
 @@||ccmeng.com^
 @@||ccmp.eu^
 @@||cdn-go.cn^
@@ -598,6 +639,7 @@
 @@||cdnjs.com^
 @@||ptx.cdntrex.com^
 @@||cedexis.net^
+@@||novelfm.changdunovel.com^
 @@||analysis.chatglm.cn^
 @@||chaturbate.com^
 @@||www.chemdraw.com.cn^
@@ -616,6 +658,7 @@
 @@||cibntv.net^
 @@||laowangappb93ibiu.cihiu487giuew87lk.xyz^
 @@||cindyholbrook.lpages.co^
+@@||ad.cityu.edu.hk^
 @@||assets.ckjr001.com^
 @@||kpstaticbj.wx.ckjr001.com^
 @@||sysdk.cl2009.com^
@@ -644,6 +687,7 @@
 @@||config.cmpassport.com^
 @@||log1.cmpassport.com^
 @@||onekey1.cmpassport.com^
+@@||smsks1.cmpassport.com^
 @@||verify.cmpassport.com^
 @@||wap.cmpassport.com^
 @@||www.cmpassport.com^
@@ -657,10 +701,13 @@
 @@||s4.cnzz.com^
 @@||z3.cnzz.com^
 @@||h5fs.coloros.com^
+@@||smartcard.apps.coloros.com^
 @@||www.supportxmr.com.cdn.cloudflare.net^
 @@||com.com^
+@@||netatmo.commander1.com^
 @@||conac.cn^
 @@||puzzles-games-api.gp-prod.conde.digital^
+@@||om-ssl.consorsbank.de^
 @@||content-autofill.googleapis.com^
 @@||coolapk.com^
 @@||api.coolapk1s.com^
@@ -711,10 +758,13 @@
 @@||d2wy8f7a9ursnm.cloudfront.net^
 @@||d35u1vg1q28b3w.cloudfront.net^
 @@||d3tglifpd8whs6.cloudfront.net^
+@@||admin.dable.io^
 @@||lf6-mgsdk-sign.dailygn.com^
 @@||lf9-mgsdk-sign.dailygn.com^
 @@||log.dailygn.com^
 @@||dangbei.com^
+@@||acs-m.daraz.com.bd^
+@@||acs-m.daraz.pk^
 @@||clickserve.dartsearch.net^
 @@||www.datadoghq-browser-agent.com^
 @@||cdn.datatables.net^
@@ -724,6 +774,8 @@
 @@||appimg.dbankcdn.com^
 @@||appimg-drcn.dbankcdn.com^
 @@||contentcenter-vali-drcn.dbankcdn.com^
+@@||smarthome-drcn.dbankcdn.com^
+@@||smartrobot-drcn.dbankcdn.com^
 @@||metrics1-drcn.dt.dbankcloud.cn^
 @@||p3.dcarimg.com^
 @@||p5-auto.dcarimg.com^
@@ -748,12 +800,15 @@
 @@||dfcfw.com^
 @@||dftoutiao.com^
 @@||webtrack.dhlglobalmail.com^
+@@||account.dianping.com^
+@@||accountapi.dianping.com^
 @@||dpmtpush.dianping.com^
 @@||h5.dianping.com^
 @@||m.dianping.com^
 @@||www.dianping.com^
 @@||tracker.didistatic.com^
 @@||digg.com^
+@@||adashx.ut.dingtalk.com^
 @@||h-adashx.ut.dingtalk.com^
 @@||report.dingtalk.com^
 @@||refer.discover.com^
@@ -778,6 +833,7 @@
 @@||search.doubao.com^
 @@||doublecklick.net^
 @@||5471782.fls.doubleclick.net^
+@@||ad.doubleclick.net^
 @@||pagead.l.doubleclick.net^
 @@||docs.doudou.fun^
 @@||www.doudou.fun^
@@ -785,6 +841,7 @@
 @@||live.douyin.com^
 @@||music.douyin.com^
 @@||open.douyin.com^
+@@||so.douyin.com^
 @@||v.douyin.com^
 @@||webcast-open.douyin.com^
 @@||www.douyin.com^
@@ -837,10 +894,12 @@
 @@||dwz.cn^
 @@||www.dxmpay.com^
 @@||dxy.com^
+@@||video1p.dxycdn.com^
 @@||dynatrace.com^
 @@||e-hentai.org^
 @@||www.e0734.com^
 @@||msync-im1-vip6-std.easemob.com^
+@@||activation.easeus.com^
 @@||mini.eastday.com^
 @@||mobappconfig.securities.eastmoney.com^
 @@||ac.ebis.ne.jp^
@@ -854,10 +913,13 @@
 @@||cashier.ele.me^
 @@||ipassport.ele.me^
 @@||mcs.ele.me^
+@@||nracc.ele.me^
+@@||shopping.ele.me^
 @@||sp.ele.me^
 @@||sso.ele.me^
 @@||waimai.ele.me^
 @@||waimai-guide.ele.me^
+@@||npm.elemecdn.com^
 @@||email.elitedangerous.com^
 @@||embedwish.com^
 @@||www.emojiall.com^
@@ -888,6 +950,7 @@
 @@||upd.faronicslabs.com^
 @@||scontent.xx.fbcdn.net^
 @@||static.xx.fbcdn.net^
+@@||video.xx.fbcdn.net^
 @@||dsp.fcbox.com^
 @@||hugelog.fcbox.com^
 @@||fcm.googleapis.com^
@@ -906,6 +969,7 @@
 @@||cfg.flurry.com^
 @@||flydigi.com^
 @@||home.focusatwill.com^
+@@||smtp.focusgroupresearch.com^
 @@||fonts.googleapis.com^
 @@||i.fotao9.com^
 @@||fourhoi.com^
@@ -966,16 +1030,19 @@
 @@||widget.gleamjs.io^
 @@||ib11.go2yd.com^
 @@||parked-content.godaddy.com^
+@@||acs.m.goofish.com^
 @@||g-acs.m.goofish.com^
 @@||h5.m.goofish.com^
 @@||h5api.m.goofish.com^
 @@||passport.goofish.com^
 @@||ssr.m.goofish.com^
+@@||video.goofish.com^
 @@||www.goofish.com^
 @@||www.goofish.pro^
 @@||google-analytics.com^
 @@||images.google.cn^
 @@||www.google.cn^
+@@||accounts.google.com^
 @@||android.clients.google.com^
 @@||apis.google.com^
 @@||clients.l.google.com^
@@ -1037,6 +1104,7 @@
 @@||res.hc-cdn.com^
 @@||res-video.hc-cdn.com^
 @@||hclips.com^
+@@||activity.hdslb.com^
 @@||aisubtitle.hdslb.com^
 @@||dl.hdslb.com^
 @@||i0.hdslb.com^
@@ -1066,6 +1134,8 @@
 @@||api-cn.theme.heytapmobi.com^
 @@||dragate-cn.dc.heytapmobi.com^
 @@||io75a.ocloud.heytapmobi.com^
+@@||obus-cn.dc.heytapmobi.com^
+@@||obus-dc20058-cn.heytapmobi.com^
 @@||games-community-gl.heytapmobile.com^
 @@||mini-game-gl.heytapmobile.com^
 @@||connect-drcn.hispace.hicloud.com^
@@ -1083,6 +1153,8 @@
 @@||hoopchina.com^
 @@||hosting24.com^
 @@||hosts-file.net^
+@@||act.hoyoverse.com^
+@@||act-webstatic.hoyoverse.com^
 @@||api-n0vadp-static.hoyoverse.com^
 @@||fastcdn.hoyoverse.com^
 @@||genshin.hoyoverse.com^
@@ -1100,6 +1172,7 @@
 @@||appgallery.huawei.com^
 @@||cloud.huawei.com^
 @@||developer.huawei.com^
+@@||activity.huaweicloud.com^
 @@||auth.huaweicloud.com^
 @@||console.huaweicloud.com^
 @@||console-intl.huaweicloud.com^
@@ -1132,6 +1205,7 @@
 @@||fmip.icloud.com^
 @@||mail.icloud.com^
 @@||metrics.icloud.com^
+@@||notes.icloud.com^
 @@||p01-ckdatabase.icloud.com^
 @@||p01-ckdatabasews.icloud.com^
 @@||p01-content.icloud.com^
@@ -1140,6 +1214,7 @@
 @@||p01-ubiquity.icloud.com^
 @@||photos.icloud.com^
 @@||reminders.icloud.com^
+@@||setup.icloud.com^
 @@||www.icloud.com^
 @@||dns.icoa.cn^
 @@||www.iconfont.cn^
@@ -1204,6 +1279,7 @@
 @@||static-s.iqiyi.com^
 @@||subscription.iqiyi.com^
 @@||t7z.cupid.iqiyi.com^
+@@||vip.iqiyi.com^
 @@||wenxue.iqiyi.com^
 @@||www.iqiyi.com^
 @@||dy-pic0.iqiyipic.com^
@@ -1215,6 +1291,7 @@
 @@||js.tv.itc.cn^
 @@||statics.itc.cn^
 @@||msdn.itellyou.cn^
+@@||next.itellyou.cn^
 @@||static.itellyou.cn^
 @@||iteye.com^
 @@||dyn.ithome.com^
@@ -1272,14 +1349,17 @@
 @@||jwpcdn.com^
 @@||jxdown.com^
 @@||kaipuyun.cn^
+@@||short-video.kakamobi.cn^
 @@||kanjiantu.com^
 @@||api.karte.io^
+@@||ad.kazakinfo.com^
 @@||kdocs.cn^
 @@||api.ke.com^
 @@||m.ke.com^
 @@||www.ke.com^
 @@||keepassxc.org^
 @@||fc.kejiweixun.com^
+@@||advert.kf5.com^
 @@||learn.khanacademy.org^
 @@||kingsoft.com^
 @@||click.klarna.de^
@@ -1289,6 +1369,7 @@
 @@||click.chp.kohls.com^
 @@||click.s.kohls.com^
 @@||konachan.com^
+@@||acs-m.koubei.com^
 @@||cstore.koubei.com^
 @@||omsc.kpn.com^
 @@||krebsonsecurity.com^
@@ -1343,6 +1424,7 @@
 @@||limbopro.com^
 @@||limestart.cn^
 @@||torimochi.line-apps.com^
+@@||oa.tr.line.me^
 @@||lingxigames.com^
 @@||cl.link-ag.net^
 @@||linka.page^
@@ -1357,8 +1439,10 @@
 @@||liuyun.io^
 @@||g.live.com^
 @@||login.live.com^
+@@||skyapi.onedrive.live.com^
 @@||storage.live.com^
 @@||teams.live.com^
+@@||skydrivesync.policies.live.net^
 @@||live800.com^
 @@||livere.com^
 @@||resfile.lixincsb.com^
@@ -1381,6 +1465,7 @@
 @@||fpdownload.macromedia.com^
 @@||data.notify.macys.com^
 @@||magene.cn^
+@@||admin.mailchimp.com^
 @@||www.maimemo.com^
 @@||mairuan.cn^
 @@||mairuan.com^
@@ -1408,6 +1493,7 @@
 @@||static.mcmod.cn^
 @@||www.mcmod.cn^
 @@||mdgram.app^
+@@||act2.mediafour.com^
 @@||imgx.mediav.com^
 @@||link.meet5.net^
 @@||www.mefrp.com^
@@ -1453,9 +1539,11 @@
 @@||assets.oneweb.mercedes-benz.com^
 @@||www.mercedes-benz.com^
 @@||www.mercedes-benz.com.cn^
+@@||action.metaffiliation.com^
 @@||as.mgtv.com^
 @@||m2.da.mgtv.com^
 @@||pcvideoaliyun.titan.mgtv.com^
+@@||video.da.mgtv.com^
 @@||www.mhzd.net^
 @@||resolver.gslb.mi-idc.com^
 @@||mi-img.com^
@@ -1465,6 +1553,7 @@
 @@||io.mi.com^
 @@||mivideo.g.mi.com^
 @@||t1.g.mi.com^
+@@||video.kts.g.mi.com^
 @@||www.mi.com^
 @@||widget.mibbit.com^
 @@||browser.pipe.aria.microsoft.com^
@@ -1476,6 +1565,8 @@
 @@||fe3cr.delivery.mp.microsoft.com^
 @@||insideruser.microsoft.com^
 @@||mobile.pipe.aria.microsoft.com^
+@@||settings-win.data.microsoft.com^
+@@||vscode.download.prss.microsoft.com^
 @@||login.microsoftonline.com^
 @@||api-edge.cognitive.microsofttranslator.com^
 @@||apiwz.midukanshu.com^
@@ -1483,6 +1574,7 @@
 @@||aikanlive.miguvideo.com^
 @@||aikanvod.miguvideo.com^
 @@||v.miguvideo.com^
+@@||ad-log-upload.mihoyo.com^
 @@||log-upload.mihoyo.com^
 @@||n0va.mihoyo.com^
 @@||n0va-static.mihoyo.com^
@@ -1500,6 +1592,8 @@
 @@||missav.ai^
 @@||missav.live^
 @@||missav.ws^
+@@||activity.browser.intl.miui.com^
+@@||adv.sec.miui.com^
 @@||api.huangye.miui.com^
 @@||api.sec.intl.miui.com^
 @@||apm-rum.inf.miui.com^
@@ -1536,6 +1630,7 @@
 @@||modyolo.com^
 @@||manus.monica.cn^
 @@||prod-chat-kimi-tos.moonshot.cn^
+@@||ad.moonton.cn^
 @@||link.morningbrew.com^
 @@||www.mousouzoku-av.com^
 @@||logincdn.msauth.net^
@@ -1553,12 +1648,37 @@
 @@||pp.myapp.com^
 @@||sqdd.myapp.com^
 @@||www.mydockfinder.com^
+@@||share.myfreecams.com^
 @@||mhc-ajax-eu.myhomescreen.tv^
 @@||mhc-ajax-eu-s2.myhomescreen.tv^
 @@||mhc-xpana-eu.myhomescreen.tv^
 @@||mhc-xpana-eu-s2.myhomescreen.tv^
 @@||3d-platform-pro.obs.cn-south-1.myhuaweicloud.com^
 @@||cdn.myhuaweicloud.com^
+@@||obs.af-north-1.myhuaweicloud.com^
+@@||obs.af-south-1.myhuaweicloud.com^
+@@||obs.ap-southeast-1.myhuaweicloud.com^
+@@||obs.ap-southeast-2.myhuaweicloud.com^
+@@||obs.ap-southeast-3.myhuaweicloud.com^
+@@||obs.ap-southeast-4.myhuaweicloud.com^
+@@||obs.ap-southeast-5.myhuaweicloud.com^
+@@||obs.cn-east-4.myhuaweicloud.com^
+@@||obs.cn-east-5.myhuaweicloud.com^
+@@||obs.cn-north-11.myhuaweicloud.com^
+@@||obs.cn-north-12.myhuaweicloud.com^
+@@||obs.cn-north-9.myhuaweicloud.com^
+@@||obs.cn-south-2.myhuaweicloud.com^
+@@||obs.cn-south-4.myhuaweicloud.com^
+@@||obs.cn-southwest-2.myhuaweicloud.com^
+@@||obs.cn-southwest-3.myhuaweicloud.com^
+@@||obs.la-north-2.myhuaweicloud.com^
+@@||obs.la-south-2.myhuaweicloud.com^
+@@||obs.me-east-1.myhuaweicloud.com^
+@@||obs.na-mexico-1.myhuaweicloud.com^
+@@||obs.ru-northwest-2.myhuaweicloud.com^
+@@||obs.sa-brazil-1.myhuaweicloud.com^
+@@||obs.sa-peru-1.myhuaweicloud.com^
+@@||obs.tr-west-1.myhuaweicloud.com^
 @@||bossaudioandcomic-1252317822.image.myqcloud.com^
 @@||consumerapp-1251779293.image.myqcloud.com^
 @@||cos.ap-bangkok.myqcloud.com^
@@ -1586,8 +1706,7 @@
 @@||myquark.cn^
 @@||zkres.myzaker.com^
 @@||a1.mzstatic.com^
-@@||a2.mzstatic.com^
-@@||a4.mzstatic.com^
+@@||a5.mzstatic.com^
 @@||a6.mzstatic.com^
 @@||a7.mzstatic.com^
 @@||a8.mzstatic.com^
@@ -1604,6 +1723,7 @@
 @@||storedl1.nearme.com.cn^
 @@||api.neixin.cn^
 @@||file.neixin.cn^
+@@||nejmqianyan.cn^
 @@||get.neofinancial.com^
 @@||webstatic.nero.com^
 @@||netease.com^
@@ -1613,19 +1733,27 @@
 @@||oneline.nextday.media^
 @@||test.nextdns.io^
 @@||sedge.nfl.com^
+@@||nhentai.com^
+@@||nhentai.net^
 @@||res.ads.nicovideo.jp^
 @@||l36.update.nieapps.com^
 @@||sams.nikonimaging.com^
 @@||i.niupic.com^
+@@||niuza.com^
+@@||njavtv.com^
 @@||www.nodeseek.com^
+@@||noodlemagazine.com^
+@@||north-plus.net^
 @@||forum.notebookreview.com^
 @@||www.novelfm.com^
 @@||p3-novelfm-sign.novelfmpic.com^
 @@||p6-novelfm-sign.novelfmpic.com^
 @@||p9-novelfm-sign.novelfmpic.com^
+@@||now.sh^
 @@||www.npmjs.com^
 @@||registry.npmmirror.com^
 @@||click.members.nra.org^
+@@||ntalker.com^
 @@||www.ntdtv.com^
 @@||pool.ntp.org^
 @@||www.nuomiphp.com^
@@ -1637,6 +1765,7 @@
 @@||link.nzz.ch^
 @@||partner.o2online.de^
 @@||consent.cmp.oath.com^
+@@||oauth2.googleapis.com^
 @@||lf-ad-convert-feedback.oceanengine.com^
 @@||c.office.com^
 @@||cdi.ofiii.com^
@@ -1645,6 +1774,7 @@
 @@||one.one.one.one^
 @@||onelap.cn^
 @@||onelap.com^
+@@||account.oneplus.com^
 @@||cloud.oneplus.com^
 @@||community.oneplus.com^
 @@||forums.oneplus.com^
@@ -1652,14 +1782,17 @@
 @@||oxygenos.oneplus.com^
 @@||service.oneplus.com^
 @@||support.oneplus.com^
+@@||sgqcvfjvr.onet.pl^
 @@||v1-mllqsv.onewsvod.com^
 @@||v9-mllqsv.onewsvod.com^
 @@||onl.bz^
+@@||ac.opapp.cn^
 @@||res.openinstall.com^
 @@||cardservice.openspeech.cn^
 @@||imeclient.openspeech.cn^
 @@||pay.openspeech.cn^
 @@||topic.openspeech.cn^
+@@||nineto5mac-d.openx.net^
 @@||doc.oplist.org^
 @@||res.oplist.org^
 @@||www.oplist.org^
@@ -1680,6 +1813,7 @@
 @@||www.oreans.com^
 @@||cmp.osano.com^
 @@||s3-us-east-1.ossfiles.com^
+@@||ad.ourgame.com^
 @@||redir.ownpage.fr^
 @@||p16-tiktokcdn-com.akamaized.net^
 @@||log-api.pangolin-sdk-toutiao-b.com^
@@ -1687,6 +1821,7 @@
 @@||go.pardot.com^
 @@||www.patreon.com^
 @@||infolink.pavv.co.kr^
+@@||official.paymaya.com^
 @@||data.service.paypal.com^
 @@||www.paypal.com^
 @@||www1.pcauto.com.cn^
@@ -1697,6 +1832,8 @@
 @@||img.pddpic.com^
 @@||mms-static.pddpic.com^
 @@||static.pddpic.com^
+@@||video2.pddpic.com^
+@@||video3.pddpic.com^
 @@||pdst.fm^
 @@||crm-cdn.peek-cloppenburg.com^
 @@||intersport.peerius.com^
@@ -1704,7 +1841,9 @@
 @@||validate.perfdrive.com^
 @@||perfops.net^
 @@||personaclick.com^
+@@||sf6-fe-tos.pglstatp-toutiao.com^
 @@||pgpartner.com^
+@@||activation.phaseone.com^
 @@||cdn1-smallimg.phncdn.com^
 @@||cdn1d-static-shared.phncdn.com^
 @@||ei.phncdn.com^
@@ -1723,8 +1862,10 @@
 @@||p0.pipi.cn^
 @@||license.piriform.com^
 @@||app-api.pixiv.net^
+@@||oauth.secure.pixiv.net^
 @@||pixpin.cn^
 @@||placehold.it^
+@@||via.placeholder.com^
 @@||play-fe.googleapis.com^
 @@||play.googleapis.com^
 @@||plyr.io^
@@ -1740,9 +1881,11 @@
 @@||porntop.com^
 @@||www.porntrex.com^
 @@||pornzog.com^
+@@||videos.porsche.cn^
 @@||www.porsche.cn^
 @@||cdn.ui.porsche.com^
 @@||nav.porsche.com^
+@@||videos.porsche.com^
 @@||www.porsche.com^
 @@||app.powerbi.com^
 @@||android-apps.pp.cn^
@@ -1755,6 +1898,10 @@
 @@||proofpoint.com^
 @@||hbbtv.prosieben.de^
 @@||s3.pstatp.com^
+@@||sf1-ttcdn-tos.pstatp.com^
+@@||sf3-pitaya-tos.pstatp.com^
+@@||sf3-ttcdn-tos.pstatp.com^
+@@||sf6-ttcdn-tos.pstatp.com^
 @@||click.pstmrk.it^
 @@||purch.com^
 @@||pushbullet.com^
@@ -1773,6 +1920,7 @@
 @@||jspassport.ssl.qhimg.com^
 @@||res.qhmsg.com^
 @@||qhres2.com^
+@@||acts.qidian.com^
 @@||book.qidian.com^
 @@||facepic.qidian.com^
 @@||game.qidian.com^
@@ -1783,6 +1931,7 @@
 @@||passport.qidian.com^
 @@||qdfepccdn.qidian.com^
 @@||www.qidian.com^
+@@||qihucdn.com^
 @@||cdn-audio.qimao.com^
 @@||res-r.qingjiaota.com^
 @@||api.qiniu.com^
@@ -1813,6 +1962,7 @@
 @@||mmsns.qpic.cn^
 @@||puui.qpic.cn^
 @@||qqadapt.qpic.cn^
+@@||shmmsns.qpic.cn^
 @@||szmmsns.qpic.cn^
 @@||vmmp.qpic.cn^
 @@||world.qpic.cn^
@@ -1820,6 +1970,8 @@
 @@||wxpaylogo.qpic.cn^
 @@||3gimg.qq.com^
 @@||a.video.qq.com^
+@@||aegis.qq.com^
+@@||aeventlog.beacon.qq.com^
 @@||android.bugly.qq.com^
 @@||apd-ugcvlive.apdcdn.tc.qq.com^
 @@||apd-vlive.apdcdn.tc.qq.com^
@@ -1880,6 +2032,7 @@
 @@||mini2015.qq.com^
 @@||msfwifi.3g.qq.com^
 @@||mv6.music.tc.qq.com^
+@@||news.qq.com^
 @@||openmobile.qq.com^
 @@||otheve.beacon.qq.com^
 @@||outexp-beta.cdn.qq.com^
@@ -1900,6 +2053,9 @@
 @@||res.wx.qq.com^
 @@||richmedia.video.qq.com^
 @@||sdk.xyapi.game.qq.com^
+@@||sharechain.qq.com^
+@@||snowflake.qq.com^
+@@||soft.imtt.qq.com^
 @@||soup.v.qq.com^
 @@||sqimg.qq.com^
 @@||static-res.qq.com^
@@ -1916,6 +2072,8 @@
 @@||trpc.qianbao.qq.com^
 @@||upage.imtt.qq.com^
 @@||v.gdt.qq.com^
+@@||view.inews.qq.com^
+@@||vpic.cms.qq.com^
 @@||vweixinf.tc.qq.com^
 @@||vweixinthumb.tc.qq.com^
 @@||weixin.qq.com^
@@ -1935,6 +2093,7 @@
 @@||quoracdn.net^
 @@||api.ts.feedback.qy.net^
 @@||img4.qy0.ru^
+@@||account.qzhua.net^
 @@||grp07.ias.rakuten.co.jp^
 @@||hb.afl.rakuten.co.jp^
 @@||pt.afl.rakuten.co.jp^
@@ -2016,13 +2175,18 @@
 @@||quapp.shenbabao.com^
 @@||ecard.shenzhentong.com^
 @@||www.shidianguji.com^
+@@||shifen.com^
 @@||shopify.com^
 @@||g.shumafen.cn^
 @@||audio-cdn.shuqireader.com^
 @@||stars.shuqireader.com^
+@@||shuzilm.cn^
+@@||ad.siemens.com.cn^
 @@||dc.sigmob.cn^
 @@||cs.silverpop.com^
 @@||live.simcitybuildit.com^
+@@||similarweb.com^
+@@||simplyhired.com^
 @@||cre.dp.sina.cn^
 @@||feeds.sina.cn^
 @@||gk.sina.cn^
@@ -2052,10 +2216,15 @@
 @@||face.t.sinajs.cn^
 @@||js.t.sinajs.cn^
 @@||www.siyuan-note.club^
+@@||siyuannote.com^
 @@||c1.skype.com^
+@@||slashdot.org^
 @@||zm.sm-tc.cn^
 @@||sm.cn^
+@@||smartpixel.tv^
+@@||smartplg.com^
 @@||app-api.smzdm.com^
+@@||snap.com^
 @@||click.snapshat.com^
 @@||aweme.snssdk.com^
 @@||efe.snssdk.com^
@@ -2078,12 +2247,14 @@
 @@||vas.snssdk.com^
 @@||vcs.snssdk.com^
 @@||verify.snssdk.com^
+@@||snzypic.com^
 @@||baike.so.com^
 @@||m.so.com^
 @@||m.360video.so.com^
 @@||m.image.so.com^
 @@||qcaptcha.so.com^
 @@||www.so.com^
+@@||sobot.com^
 @@||channel.shouji.sogou.com^
 @@||get.shouji.sogou.com^
 @@||img.shouji.sogou.com^
@@ -2112,6 +2283,7 @@
 @@||login.soulapp.cn^
 @@||pay.soulapp.cn^
 @@||themis.soulapp.cn^
+@@||video.soulapp.cn^
 @@||sourl.cn^
 @@||south-plus.net^
 @@||spaceship-cdn.com^
@@ -2148,6 +2320,7 @@
 @@||syndicatedsearch.goog^
 @@||t.me^
 @@||licensing.tableausoftware.com^
+@@||ads.taboola.com^
 @@||tachiyomi.org^
 @@||tagtic.cn^
 @@||bbs.tampermonkey.net.cn^
@@ -2156,6 +2329,13 @@
 @@||i.tantanapp.com^
 @@||na61-na62.wagbridge.advertisement.tanx.com^
 @@||na61-na62.wagbridge.alibaba.tanx.com^
+@@||accscdn.m.taobao.com^
+@@||accscdn4public.m.taobao.com^
+@@||acs.m.taobao.com^
+@@||acs4baichuan.m.taobao.com^
+@@||acs4public.m.taobao.com^
+@@||adashx.m.taobao.com^
+@@||advertisement.taobao.com^
 @@||amdcopen.m.taobao.com^
 @@||audid-api.taobao.com^
 @@||audid-api-sg.taobao.com^
@@ -2188,6 +2368,7 @@
 @@||retcode.taobao.com^
 @@||risk.taobao.com^
 @@||security.taobao.com^
+@@||sns.m.taobao.com^
 @@||tbskip.taobao.com^
 @@||trade-acs.m.taobao.com^
 @@||tunion-api.m.taobao.com^
@@ -2242,6 +2423,8 @@
 @@||thecubexguide.com^
 @@||thefantazy.com^
 @@||theporndude.com^
+@@||obituaries.therecord.com^
+@@||obituaries.thestar.com^
 @@||www.thinkdifferent.us^
 @@||catchup.thisisdax.com^
 @@||threatbook.cn^
@@ -2249,6 +2432,7 @@
 @@||i.tianqi.com^
 @@||api.tiantiantiaosheng.com^
 @@||cdn.tiantiantiaosheng.com^
+@@||site.tiantiantiaosheng.com^
 @@||www.tiantiantiaosheng.com^
 @@||click.mailing.ticketmaster.com^
 @@||tiktokv.com^
@@ -2257,6 +2441,7 @@
 @@||tj.gov.cn^
 @@||h5api.m.tmall.com^
 @@||s.click.tmall.com^
+@@||obituaries.toacorn.com^
 @@||st.todesk.com^
 @@||fp.tongdun.net^
 @@||tool.lu^
@@ -2269,12 +2454,14 @@
 @@||dm.toutiao.com^
 @@||m.toutiao.com^
 @@||monsetting.toutiao.com^
+@@||novelfm.zlink.toutiao.com^
 @@||www.toutiao.com^
 @@||api.toutiaoapi.com^
 @@||p26-sign.toutiaoimg.com^
 @@||p3-sign.toutiaoimg.com^
 @@||p6-shortvideo-sign.toutiaoimg.com^
 @@||p9-sign.toutiaoimg.com^
+@@||toutiaostatic.com^
 @@||v9-x.toutiaovod.com^
 @@||trackcmp.net^
 @@||tracker.eu.org^
@@ -2286,12 +2473,14 @@
 @@||trib.al^
 @@||clicks.trx-hub.com^
 @@||www.tudou.com^
+@@||activity.tuiapple.com^
 @@||api.ads.tvb.com^
 @@||img.ads.tvb.com^
 @@||tvzhe.com^
 @@||abs.twimg.com^
 @@||abs-0.twimg.com^
 @@||pbs.twimg.com^
+@@||video.twimg.com^
 @@||twitter.com^
 @@||tx163.com^
 @@||txxx.com^
@@ -2318,6 +2507,7 @@
 @@||ulive-sc.uc.cn^
 @@||user-auth-server.uc.cn^
 @@||v.uc.cn^
+@@||vps.uc.cn^
 @@||ucweb.com^
 @@||uczzd.cn^
 @@||uee.me^
@@ -2354,12 +2544,14 @@
 @@||uri6.com^
 @@||urldefense.com^
 @@||used.ca^
+@@||sj.uukanshu.com^
 @@||wxmini-api.uyouqu.com^
 @@||uzzf.com^
 @@||v16m-default.akamaized.net^
 @@||vcentry2.valuecommerce.ne.jp^
 @@||vcentry3.valuecommerce.ne.jp^
 @@||crl.verisign.com^
+@@||videotxxx.com^
 @@||docs.vilinko.com^
 @@||down1.vilinko.com^
 @@||lightframe.vilinko.com^
@@ -2369,6 +2561,7 @@
 @@||ms.vipstatic.com^
 @@||content.viralize.tv^
 @@||dc.services.visualstudio.com^
+@@||account.vivo.com^
 @@||antivirus.vivo.com^
 @@||api.vivo.com^
 @@||appstore.vivo.com^
@@ -2376,6 +2569,7 @@
 @@||data.vivo.com^
 @@||gamecenter.vivo.com^
 @@||msg.vivo.com^
+@@||notification.vivo.com^
 @@||ota.vivo.com^
 @@||passport.vivo.com^
 @@||push.vivo.com^
@@ -2395,6 +2589,7 @@
 @@||openapi.vmall.com^
 @@||www.vmall.com^
 @@||res.vmallres.com^
+@@||vmware.com^
 @@||coop.voicecloud.cn^
 @@||download.voicecloud.cn^
 @@||ossp.voicecloud.cn^
@@ -2412,6 +2607,7 @@
 @@||goto.walmart.com^
 @@||omniture.walmart.com^
 @@||wangbase.com^
+@@||news.warhammer.com^
 @@||wattp.net^
 @@||alist.wavee.cn^
 @@||wg.wavee.cn^
@@ -2429,6 +2625,7 @@
 @@||gtimg.wechatpay.cn^
 @@||paydns.wechatpay.cn^
 @@||m.weibo.cn^
+@@||new.vip.weibo.cn^
 @@||passport.weibo.cn^
 @@||weibo.com^
 @@||f.video.weibocdn.com^
@@ -2454,9 +2651,12 @@
 @@||s-plugins.wordpress.org^
 @@||auth.wosms.cn^
 @@||s1.wp.com^
+@@||account.wps.cn^
 @@||wwo.wps.cn^
 @@||mo.res.wpscdn.cn^
 @@||qn.cache.wpscdn.cn^
+@@||volcengine-cache-weboffice.wpscdn.cn^
+@@||volcengine-kdocs-cache.wpscdn.cn^
 @@||api-cmnt.wtzw.com^
 @@||api-ks.wtzw.com^
 @@||cdn.wtzw.com^
@@ -2471,9 +2671,11 @@
 @@||x6img.com^
 @@||www.xanimeporn.com^
 @@||assets-www.xbox.com^
+@@||account.xfinfr.com^
 @@||ime-res-download.xfinfr.com^
 @@||fe-static.xhscdn.com^
 @@||fe-video-qc.xhscdn.com^
+@@||sns-avatar-qc.xhscdn.com^
 @@||xhslink.com^
 @@||m.xiachufang.com^
 @@||mip.xiachufang.com^
@@ -2481,6 +2683,7 @@
 @@||ci.xiaohongshu.com^
 @@||picasso-static.xiaohongshu.com^
 @@||www.xiaohongshu.com^
+@@||adtrack.xiaojukeji.com^
 @@||dorado.xiaojukeji.com^
 @@||account.xiaomi.com^
 @@||api.installer.xiaomi.com^
@@ -2498,6 +2701,7 @@
 @@||m.video.xiaomi.com^
 @@||market.xiaomi.com^
 @@||mibi.api.xiaomi.com^
+@@||o2o.api.xiaomi.com^
 @@||register.xmpush.global.xiaomi.com^
 @@||tvepg.pandora.xiaomi.com^
 @@||w.pandora.xiaomi.com^
@@ -2548,6 +2752,7 @@
 @@||static-hw.xnxx-cdn.com^
 @@||static-l3.xnxx-cdn.com^
 @@||www.xnxx.com^
+@@||account.xunfei.cn^
 @@||res.xunfei.cn^
 @@||srf.xunfei.cn^
 @@||cloud.xunlei.com^
@@ -2566,6 +2771,8 @@
 @@||pc.xunlei.com^
 @@||tv.xunlei.com^
 @@||v.xunlei.com^
+@@||video.xunlei.com^
+@@||vip.xunlei.com^
 @@||www.xunlei.com^
 @@||cdn77-pic.xvideos-cdn.com^
 @@||cdn77-vid.xvideos-cdn.com^
@@ -2583,6 +2790,8 @@
 @@||redirect.appmetrica.yandex.com^
 @@||mobile.yangkeduo.com^
 @@||yep.com^
+@@||venus.yhd.com^
+@@||vip-pro.m.yhd.com^
 @@||doris.yidianzixun.com^
 @@||mb.yidianzixun.com^
 @@||mp.yidianzixun.com^
@@ -2602,6 +2811,9 @@
 @@||c.youdao.com^
 @@||foundation.youdao.com^
 @@||passport.youdao.com^
+@@||account.youku.com^
+@@||acs.youku.com^
+@@||activity.youku.com^
 @@||api.youku.com^
 @@||data.youku.com^
 @@||dl.youku.com^
@@ -2615,6 +2827,7 @@
 @@||s.youku.com^
 @@||search.youku.com^
 @@||v.youku.com^
+@@||vip.youku.com^
 @@||www.youku.com^
 @@||assets.youlai.cn^
 @@||m.youlai.cn^
@@ -2642,6 +2855,7 @@
 @@||cdn-chateva.zhhainiao.com^
 @@||mobile-img-baofun.zhhainiao.com^
 @@||mobile-wallpaper-api.zhhainiao.com^
+@@||newvip-cdn.zhhainiao.com^
 @@||m.zhibo8.com^
 @@||api.zhihu.com^
 @@||apm.zhihu.com^
@@ -2652,6 +2866,7 @@
 @@||link.zhihu.com^
 @@||static.zhihu.com^
 @@||sugar.zhihu.com^
+@@||video.zhihu.com^
 @@||www.zhihu.com^
 @@||zhuanlan.zhihu.com^
 @@||app-advertise.zhihuishu.com^
@@ -2691,6 +2906,7 @@
 @@||wap.zol.com.cn^
 @@||click.zoom.us^
 @@||zoosnet.net^
+@@||ad-putting.gw.zt-express.com^
 @@||bd1.zuimeitianqi.com^
 @@||bd2.zuimeitianqi.com^
 @@||honor.zuimeitianqi.com^
